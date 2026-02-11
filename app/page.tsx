@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <>
       <div 
-        className="relative h-[50vw] bg-cover bg-center"
+        className="relative h-[55vw] bg-cover bg-center"
         style={{ backgroundImage: "url('/perfect_blue.jpg')" }}
       >
         <div className="px-[11vw] pt-[11vw]">
@@ -65,7 +65,13 @@ export default function Home() {
             DEVELOPER
           </div>
           <div className={`${markaziText.className} text-center text-[1.3vw] px-[10vw] -mt-[]`}>
-            A 23 year old fullstack developer based in the Philippines, this is so great wow. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora explicabo exercitationem incidunt voluptatem aliquid impedit vero sit.
+            A 23 year old fullstack developer based in the Philippines, this is so great wow. Lorem ipsum, dolor sit amet consectetur adipisicing
+          </div>
+          <div className={`${markaziText.className} text-center text-[1.3vw] px-[10vw] -mt-[0.8vw]`}>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate excepturi aspernatur
+          </div>
+          <div className={`${markaziText.className} text-center text-[1.3vw] px-[10vw] -mt-[0.8vw]`}>
+            Lorem ipsum dolor sit amet consectetur, 
           </div>
 
         </div>
