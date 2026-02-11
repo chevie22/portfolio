@@ -30,7 +30,11 @@ export default function Home() {
     <>
       <div 
         className="relative h-[55vw] bg-cover bg-center"
-        style={{ backgroundImage: "url('/perfect_blue.jpg')" }}
+        // style={{ backgroundImage: "url('/perfect_blue.jpg')" }}
+        // style={{ backgroundImage: "url('/Phillips-Neon-Genesis-Evangelion.webp')" }}
+        // style={{ backgroundImage: "url('/frieren-beyond-journeys-end-thumb.jpg')" }}
+        style={{ backgroundImage: "url('/frieren-beyond-journeys-end-thumb-darker.jpg')" }}
+
       >
         <div className="px-[11vw] pt-[11vw]">
           <div className={`${markaziText.className} -mb-[2.3vw] text-[1.3vw]`}>            
