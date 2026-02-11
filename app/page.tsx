@@ -1,9 +1,21 @@
 import Image from "next/image";
 import { Charm } from "next/font/google";
 import { Fredericka_the_Great } from "next/font/google";
+import { Kings } from "next/font/google";
+import { Markazi_Text } from "next/font/google";
 import { IM_Fell_French_Canon_SC } from "next/font/google";
 
 const frederickaTheGreat = Fredericka_the_Great({
+  subsets: ["latin"],
+  weight: ["400"] // choose weights u want
+});
+
+const kings = Kings({
+  subsets: ["latin"],
+  weight: ["400"] // choose weights u want
+});
+
+const markaziText = Markazi_Text({
   subsets: ["latin"],
   weight: ["400"] // choose weights u want
 });
@@ -20,12 +32,18 @@ export default function Home() {
         className="relative h-[50vw] bg-cover bg-center"
         style={{ backgroundImage: "url('/perfect_blue.jpg')" }}
       >
-        <div className="px-[11vw] pt-[10vw]">
+        <div className="px-[11vw] pt-[11vw]">
+          <div className={`${markaziText.className} -mb-[2.3vw] text-[1.3vw]`}>            
+            Lami kaayo i kaon og tae lmaoo. Lorem ipsum dolor, sit amet consect oten.
+            <span className="ml-[12.6vw]">
+              Lami kaayo i kaon og tae lmaoo. Lorem ipsum dolor, sit amet consect oten.
+            </span>
+          </div>
 
           <div className="flex items-center gap-3">
             <hr className="flex-grow border-t-2 border-white" />
 
-            <div className={`${imFellFrenchCanonSC.className} text-center`}>
+            <div className={`${imFellFrenchCanonSC.className} text-center mx-1`}>
               <div className="text-[1.5vw]">
                 CHEVIE
               </div>
@@ -46,8 +64,8 @@ export default function Home() {
           <div className={`${frederickaTheGreat.className} text-[10vw] text-center -mt-[7.7vw]`}>
             DEVELOPER
           </div>
-          <div className="text-center text-lg px-[10vw] -mt-[2.5vw]">
-            A developer from da pelepens, this is so great wow. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam accusamus, adipisci soluta facilis modi corrupti fugit eos consequatur quasi nobis assumenda in! Nam tempora yman.
+          <div className={`${markaziText.className} text-center text-[1.3vw] px-[10vw] -mt-[]`}>
+            A 23 year old fullstack developer based in the Philippines, this is so great wow. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora explicabo exercitationem incidunt voluptatem aliquid impedit vero sit.
           </div>
 
         </div>
