@@ -4,8 +4,32 @@ import { Fredericka_the_Great } from "next/font/google";
 import { Kings } from "next/font/google";
 import { Markazi_Text } from "next/font/google";
 import { IM_Fell_French_Canon_SC } from "next/font/google";
+import { Bitter } from "next/font/google";
+import { Lora } from "next/font/google";
+import { Tai_Heritage_Pro } from "next/font/google";
+import { Josefin_Sans } from "next/font/google";
 
 const frederickaTheGreat = Fredericka_the_Great({
+  subsets: ["latin"],
+  weight: ["400"] // choose weights u want
+});
+
+const josefinSans = Josefin_Sans({
+  subsets: ["latin"],
+  weight: ["400"] // choose weights u want
+});
+
+const taiHeritagePro = Tai_Heritage_Pro({
+  subsets: ["latin"],
+  weight: ["400"] // choose weights u want
+});
+
+const lora = Lora({
+  subsets: ["latin"],
+  weight: ["400"] // choose weights u want
+});
+
+const bitter = Bitter({
   subsets: ["latin"],
   weight: ["400"] // choose weights u want
 });
@@ -47,7 +71,7 @@ export default function Home() {
           <div className="flex items-center gap-3">
             <hr className="flex-grow border-t-2 border-white" />
 
-            <div className={`${imFellFrenchCanonSC.className} text-center mx-1`}>
+            <div className={`${taiHeritagePro.className} text-center mx-1`}>
               <div className="text-[1.5vw]">
                 CHEVIE
               </div>
@@ -61,21 +85,23 @@ export default function Home() {
           </div>
 
 
-          <div className={`${frederickaTheGreat.className} text-[12vw] text-center -mt-[3.7vw]`}>
+          <div className={`${josefinSans.className} text-[12vw] text-center -mt-[3vw]`}>
             FULLSTACK
           </div>
 
-          <div className={`${frederickaTheGreat.className} text-[10vw] text-center -mt-[7.7vw]`}>
+          <div className={`${josefinSans.className} text-[10vw] text-center -mt-[7.7vw]`}>
             DEVELOPER
           </div>
-          <div className={`${markaziText.className} text-center text-[1.3vw] px-[10vw] -mt-[]`}>
-            A 23 year old fullstack developer based in the Philippines, this is so great wow. Lorem ipsum, dolor sit amet consectetur adipisicing
-          </div>
-          <div className={`${markaziText.className} text-center text-[1.3vw] px-[10vw] -mt-[0.8vw]`}>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate excepturi aspernatur
-          </div>
-          <div className={`${markaziText.className} text-center text-[1.3vw] px-[10vw] -mt-[0.8vw]`}>
-            Lorem ipsum dolor sit amet consectetur, 
+          <div className="-mt-[2vw]">
+            <div className={`${markaziText.className} text-center text-[1.3vw] px-[10vw] -mt-[]`}>
+              A 23 year old fullstack developer based in the Philippines, this is so great wow. Lorem ipsum, dolor sit amet consectetur adipisicing
+            </div>
+            <div className={`${markaziText.className} text-center text-[1.3vw] px-[10vw] -mt-[0.8vw]`}>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate excepturi aspernatur
+            </div>
+            <div className={`${markaziText.className} text-center text-[1.3vw] px-[10vw] -mt-[0.8vw]`}>
+              Lorem ipsum dolor sit amet consectetur, 
+            </div>
           </div>
 
         </div>
