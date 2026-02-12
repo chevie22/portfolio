@@ -85,11 +85,11 @@ export default function Home() {
           </div>
 
 
-          <div className={`${josefinSans.className} text-[12vw] text-center -mt-[3vw]`}>
+          <div className={`${frederickaTheGreat.className} text-[12vw] text-center -mt-[4vw]`}>
             FULLSTACK
           </div>
 
-          <div className={`${josefinSans.className} text-[10vw] text-center -mt-[7.7vw]`}>
+          <div className={`${frederickaTheGreat.className} text-[10vw] text-center -mt-[7.7vw]`}>
             DEVELOPER
           </div>
           <div className="-mt-[2vw]">
